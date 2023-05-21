@@ -6,7 +6,7 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 # Check if the platform the script is running on is Linux
-if [ $(uname) != "Linux" ]; then
+if [ "$(uname)" != "Linux" ]; then
   echo "This is not a Linux platform" && exit 1
 fi
 
