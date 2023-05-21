@@ -1,4 +1,4 @@
-The primary objective of this shell script is to identify the operating system (OS) platform. If the platform is determined to be Linux, the script proceeds to identify and return the Linux distribution. However, if the platform is not Linux, the script exits with a status code of 1.
+This shell script purpose is to identify the operating system (OS) platform. If the platform is determined to be Linux, the script proceeds to identify and return the Linux distribution. However, if the platform is not Linux, the script exits with a status code of 1.
 It is designed to be executed with root privileges.
 
 
