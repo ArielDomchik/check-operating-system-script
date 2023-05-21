@@ -2,8 +2,7 @@
 
 # Check if the script is run by the root user
 if [ "$(id -u)" -ne 0 ]; then
-  echo "Not root user"
-  exit
+  echo "Not root user" && exit
 fi
 
 # Check if the platform the script is running on is Linux
