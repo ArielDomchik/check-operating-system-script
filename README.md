@@ -10,5 +10,3 @@ It is designed to be executed with root privileges.
 - Result Printing: Prints specific information based on the detected distribution. Supported distributions: RedHat, CentOS, SuSe. Displays a generic message if the distribution is unrecognized.
 
 The script has been tested successfully on various Linux distributions, including Ubuntu, SuSe, RedHat, CentOS, and macOS (using EC2 instances on AWS).
-
-This task provided an excellent opportunity to gain practical knowledge of linux commands and bash scripting. It was a valuable learning experience, and I thoroughly enjoyed the challenge.
