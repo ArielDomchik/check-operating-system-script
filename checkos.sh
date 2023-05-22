@@ -13,28 +13,15 @@ fi
 # Check the release file of the OS
 linux_flavor() {
   if grep -iq 'centos' /etc/*-release; then
-    echo "CentOS"
+    echo "CentOS is a Linux distribution that provides a free and open-source community-supported computing platform"
   elif grep -iq 'redhat' /etc/*-release; then
-    echo "RedHat"
+    echo "Red Hat, Inc. is an American software company that provides open source software products"
   elif grep -iq 'suse' /etc/*-release; then
-    echo "SuSe"
+    echo "SuSe is a German-based multinational open-source software company"
   else
     echo "Another Linux distribution."
   fi
 }
 
-# Assign the distribution string to the 'distro' variable (either RedHat, CentOS, SuSe, or Other).
-distro=$(linux_flavor)
-
-# Use a switch case to print the desired result that matches the Linux distribution
-case $distro in
-  RedHat)
-    echo "Red Hat, Inc. is an American software company that provides open source software products";;
-  CentOS)
-    echo "CentOS is a Linux distribution that provides a free and open-source community-supported computing platform";;
-  SuSe)
-    echo "SUSE is a German-based multinational open-source software company";;
-  *)
-    echo "Another Linux distribution.";;
-esac
+linux_flavor
 
